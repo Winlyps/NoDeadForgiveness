@@ -1,0 +1,5 @@
+name: NoDeadForgiveness
+version: '1.0.0'
+main: winlyps.noDeadForgiveness.NoDeadForgiveness
+api-version: '1.20'
+authors: [ Winlyps ]
