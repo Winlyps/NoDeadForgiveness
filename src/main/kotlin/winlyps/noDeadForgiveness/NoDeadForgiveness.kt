@@ -14,6 +14,9 @@ class NoDeadForgiveness : JavaPlugin() {
 
     override fun onDisable() {
         // Plugin shutdown logic
-        logger.info("NoDeadForgiveness plugin has been disabled.")
+        server.worlds.forEach { world ->
+            world.setGameRuleValue("forgiveDeadPlayers", "true")
+            logger.info("NoDeadForgiveness plugin has been disabled.")
+        }
     }
 }
